@@ -18,6 +18,7 @@ const addTask = () => {
     )
     .then((res) => {
       console.log(res)
+      store.getData()
     })
     .catch((err) => {
       console.log(err)
@@ -28,7 +29,10 @@ const addTask = () => {
 <template>
   <div class="w-full relative">
     <input type="text" class="w-full rounded p-2" v-model="text" />
-    <button class="absolute rounded text-lg top-1 right-2 text-white bg-black" @click="addTask">
+    <button
+      class="absolute rounded text-lg top-1 right-2 text-white bg-black w-8 h-8"
+      @click="addTask"
+    >
       +
     </button>
   </div>

@@ -85,9 +85,7 @@ function signup() {
         <ErrorMessage name="passwordAgain" />
       </div>
     </VForm>
-    <button class="block bg-slate-600 rounded p-2 text-white" @click="signup">Signup</button>
-    <button class="bg-slate-600 rounded p-1 text-white text-xs" @click="goToLogin">
-      Already have an account?
-    </button>
+    <button class="block bg-slate-600 rounded p-2 text-white mb-10" @click="signup">Signup</button>
+    <button class="rounded p-1 text-xs" @click="goToLogin">Already have an account?</button>
   </div>
 </template>

@@ -70,9 +70,7 @@ function goToSignup() {
         <ErrorMessage name="email" />
       </div>
     </VForm>
-    <button class="block bg-slate-600 rounded p-2 text-white" @click="login">Login</button>
-    <button class="bg-slate-600 rounded p-1 text-white text-xs" @click="goToSignup">
-      Don't have an account yet?
-    </button>
+    <button class="block bg-slate-600 rounded p-2 text-white mb-10" @click="login">Login</button>
+    <button class="rounded p-1 text-xs" @click="goToSignup">Don't have an account yet?</button>
   </div>
 </template>

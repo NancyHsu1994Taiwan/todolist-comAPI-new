@@ -1,8 +1,11 @@
 <script setup>
+import { computed } from 'vue'
 import { useGetDataStore } from '../stores/counter.js'
 import TaskItem from '../components/TaskItem.vue'
 const store = useGetDataStore()
-let dataAll = store.data
+let dataAll = computed(() => {
+  return store.data
+})
 console.log(dataAll)
 </script>
 <template>

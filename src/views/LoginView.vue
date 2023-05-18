@@ -2,7 +2,7 @@
 import LoginItem from '../components/LoginItem.vue'
 </script>
 <template>
-  <div class="">
+  <div class="h-screen flex justify-center items-center">
     <LoginItem class="mx-auto w-full" />
   </div>
 </template>

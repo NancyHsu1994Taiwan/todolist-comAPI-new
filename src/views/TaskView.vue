@@ -23,7 +23,7 @@ console.log(resMsg)
   <div class="w-full h-screen">
     <NavItem class="w-full mb-10" />
     <div class="bg-slate-400 p-2 rounded w-[40%] mx-auto my-auto" v-if="resMsg === 200">
-      <InputItem />
+      <InputItem class="mb-4" />
       <TasklistItem v-if="data.length !== 0" />
       <EmptyItem v-if="data.length === 0" />
     </div>

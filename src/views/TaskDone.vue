@@ -1,9 +1,12 @@
 <script setup>
+import { computed } from 'vue'
 import { useGetDataStore } from '../stores/counter.js'
 import TaskItem from '../components/TaskItem.vue'
 const store = useGetDataStore()
-let dataDone = store.data.filter((item) => {
-  return item.completed_at !== null
+let dataDone = computed(() => {
+  return store.data.filter((item) => {
+    return item.completed_at !== null
+  })
 })
 </script>
 <template>
